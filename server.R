@@ -8,7 +8,10 @@
 #
 
 library(shiny)
+library(ggplot2)
 
+#http://web.stanford.edu/~cengel/cgi-bin/anthrospace/building-my-first-shiny-application-with-ggplot
+#Code in R 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
    
