@@ -15,7 +15,18 @@ library(shiny)
 shinyUI(fluidPage(
   
   # Application title
-  titlePanel("Old Faithful Geyser Data"),
+  titlePanel("Netflix in Charts"),
+  h4("Tidying up your data with Marie Kondo. Let's spark some joy with a Netflix 2018 in review."),
+  textInput("a","Gender"),
+  textInput("a", "Major"),
+  fileInput("file1", "Upload your user viewing data",
+            accept = c(
+              "text/csv",
+              "text/comma-separated-values,text/plain",
+              ".csv")
+  ),
+ 
+ 
   # Tidying up your data with Marie Kondo. Let's spark some joy with a Netflix 2018 in review.
   # 2018 in review because Netflix doesn't give it to you! 
   
